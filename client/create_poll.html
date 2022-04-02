@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Free Poll Maker - Create an Online Poll</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="create_poll.css">
+
+</head>
+
+<body>
+
+    <div class="poll">
+        <!--main container -->
+        <h1 class="pageTitle">
+            Create a poll
+        </h1>
+        <p class="pageSubtitle">
+            Complete the below fields to create your poll.
+        </p>
+    </div>
+    <style>
+
+    </style>
+    <div class="container">
+        <form class="pollform" id="pollform">
+            <div class="titleLabel">
+                <label for="title" class="label">
+                    Title
+                </label>
+                <div class="titleInput">
+                    <input type="text" name="title" id="title" placeholder="Type your question here">
+                </div>
+            </div>
+            <div>
+                <div class="descriptionLabel">
+                    <label for="description" class="label">
+                            Description (optional)</span>
+                        </label>
+                </div>
+                <div class="descriptionInput">
+                    <textarea id="description" name="description" rows="1"></textarea>
+                </div>
+            </div>
+            <div class="optionlabel">
+                <label for="title" class="label">
+                    Answer Options
+                </label>
+                <div class="optionInput">
+                    <input type="text" name="option1" id="option1" placeholder="Option 1">
+                </div>
+                <div class="optionInput">
+                    <input type="text" name="option2" id="option2" placeholder="Option 2">
+                </div>
+            </div>
+            <button type="button" onclick="window.location.href='index.html'" id="submitbtn">+ Create poll</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
